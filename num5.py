@@ -1,5 +1,5 @@
 import random
-def start_of_the_game():
+def loading_game():
     print(
         "Доброго времени суток, уважаемый игрок и добро пожаловать в мою игру! \n"
         "Правила: В начале игры мы случайным образом определим изначальное количество камней в куче.\n"
@@ -22,7 +22,7 @@ def koordinal_step(number_stones):
     return number_stones - koordinal_step, koordinal_step
 
 
-if start_of_the_game():
+if loading_game():
 
     number_stones = random.randint(4, 30)
     win = "logout"
