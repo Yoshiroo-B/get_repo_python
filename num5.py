@@ -32,9 +32,7 @@ while win == "logout":
 
     input_data = input()
 
-    if player_step(input_data):
-        player_stone = int(input_data)
-        number_stones = number_stones - player_stone
+
 
         if number_stones == 1:
             print("\nCongratulations!")
