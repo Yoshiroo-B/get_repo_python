@@ -55,3 +55,4 @@ while win == "logout":
                 print("You are dead. Game over!")
                 win = "koordinal_win"
 
+
