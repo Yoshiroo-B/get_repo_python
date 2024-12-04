@@ -56,5 +56,3 @@ while win == "logout":
                 print("You are dead. Game over!")
                 win = "koordinal_win"
 
-    else:
-        print("Введено неверное значение. Введите возможное количество.")
