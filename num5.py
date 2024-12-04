@@ -23,7 +23,8 @@ def koordinal_step(number_stones):
     return number_stones - koordinal_step, koordinal_step
 
 
-
+number_stones = random.randint(4, 30)
+win = "logout"
 
 while win == "logout":
     print(f"\nТекущее значение камней в куче: {number_stones}\n")
@@ -32,7 +33,9 @@ while win == "logout":
 
     input_data = input()
 
-
+    if player_step(input_data):
+        player_stone = int(input_data)
+        number_stones = number_stones - player_stone
 
         if number_stones == 1:
             print("\nCongratulations!")
@@ -54,3 +57,5 @@ while win == "logout":
                 print("You are dead. Game over!")
                 win = "koordinal_win"
 
+    else:
+        print("Введено неверное значение. Введите возможное количество.")
