@@ -17,8 +17,6 @@ def player_step(input_data):
 
 
 def koordinal_step(number_stones):
-    if number_stones <= 4:
-        return 1, abs(1 - number_stones)
     koordinal_step = random.randint(1, 3)
     return number_stones - koordinal_step, koordinal_step
 
